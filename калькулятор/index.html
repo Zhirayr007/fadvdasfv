@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css" />
+	<title>Калькулятор конвертации валюты</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<h1>Калькулятор конвертации валюты</h1>
+		<form action="sender.php" method="POST">
+			<div class="main-block">
+				<input class="sum" id="input" name="many" type="text" placeholder="Сумма, руб" required>
+				<div class="currency-block">
+
+					<span>Валюта для конвертации:</span>
+					<select name="vlyuta" id="select" class="prokol">
+						<option value="USD">USD - Доллар США</option>
+						<option value="EUR">EUR - Евро</option>
+						<option value="GBP">GPB - Фунт стерлингов</option>
+					</select>
+				</div>
+				<input class="summ-in-v" id="result" name="many_result" type="text" placeholder="Сумма в валюте">
+				<input class="mail" id="input-mail" name="email" type="text" placeholder="эл. почта" required>
+				<button class="button">
+					<span>Отправить</span>
+				</button>
+			</div>
+		</form>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
